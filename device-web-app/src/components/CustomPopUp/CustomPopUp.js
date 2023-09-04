@@ -1,7 +1,6 @@
 import React from "react";
 import "./CustomPopUp.css";
 import { VscChromeClose } from "react-icons/vsc";
-import Button from "../Common/Button/Button";
 
 const CustomPopUp = (props) => {
   return props.trigger ? (
