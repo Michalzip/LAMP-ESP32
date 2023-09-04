@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.color {
+  margin-top: 5%;
+}
+
+.close-btn {
+  background-color: white;
+  font-size: 25px;
+}
