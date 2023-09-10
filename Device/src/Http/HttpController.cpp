@@ -5,10 +5,7 @@
 #include <WebServer.h>
 #include <uri/UriBraces.h>
 #include "BlinkLight.h"
-
-// Board boardInstance;
-
-// BlinkLight Light(boardInstance);
+#include <HTTPClient.h>
 
 HttpController::HttpController() : Light(boardInstance), server(80)
 {
@@ -23,18 +20,19 @@ void HttpController::startServer()
     // time to connecct
     while (WiFi.status() != WL_CONNECTED)
     {
+      
         Serial.println("Try to connect");
         delay(100);
         Serial.print(".");
+    
     }
 
     Serial.println("Connected!");
 
     Serial.println(WiFi.localIP());
-
     // ACTIVE ENDPOINTS
-    this->server.on("/solid-light", std::bind(&HttpController::handleSolidLight, this));
-    this->server.on("/mode-light", std::bind(&HttpController::handleModeLight, this));
+    this->server.on("/custom-color",HTTP_GET,std::bind(&HttpController::handleSolidLight, this));
+    this->server.on("/section-color", std::bind(&HttpController::handleModeLight, this));
 
     this->server.begin();
 }
@@ -48,15 +46,26 @@ void HttpController::listenRequest()
 void HttpController::handleSolidLight()
 {
 
+
     String redValue = server.arg("r");
     String greenValue = server.arg("g");
     String blueValue = server.arg("b");
 
-    String blinkingParam = server.arg("blinking");
+     Serial.print(redValue);
+      Serial.print(greenValue);
+       Serial.print(blueValue);
 
-    Serial.println("hello here StateColor named blinking :)");
+    this->server.enableCORS();
+    server.sendHeader("Content-Type", "application/json");
+    server.send(200, "application/json");
 
-    Light.setCloudColor(255, 255, 255);
+    // String blinkingParam = server.arg("blinking");
+
+    // Serial.println("hello here StateColor named blinking :)");
+
+    // Light.setCloudColor(255, 255, 255);
+
+    
 }
 
 void HttpController::handleModeLight()

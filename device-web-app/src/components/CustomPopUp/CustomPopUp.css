@@ -14,7 +14,8 @@
 .popup-inner {
   border-radius: 30px;
   position: relative;
-  padding: 32px;
+  padding-top: 32px;
+
   width: 100%;
   height: 500px;
   max-width: 640px;
@@ -26,13 +27,17 @@
   right: 16px;
 }
 .Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 20%;
-  margin-top: 9%;
+  text-align: center;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  margin-bottom: 8%;
 }
 .Describe {
   text-align: center;

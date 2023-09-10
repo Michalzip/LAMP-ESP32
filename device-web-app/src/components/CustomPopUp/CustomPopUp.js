@@ -9,12 +9,9 @@ const CustomPopUp = (props) => {
         <button className="close-btn">
           <VscChromeClose />
         </button>
-        {props.children}
-
+        <div className="Content">{props.children}</div>
         <div className="Footer">
-          <div className="Describe">
-            <p>Choose your favorite colors thanks to the color palette</p>
-          </div>
+          <p>{props.describe}</p>
         </div>
       </div>
     </div>
