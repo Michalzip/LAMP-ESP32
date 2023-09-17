@@ -1,8 +1,8 @@
 import React from "react";
 import MenuContainer from "../components/MenuContainer/MenuContainer";
 
-const Home = () => {
+const HomePage = () => {
   return <MenuContainer />;
 };
 
-export default Home;
+export default HomePage;

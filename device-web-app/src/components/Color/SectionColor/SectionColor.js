@@ -2,14 +2,13 @@ import React from "react";
 import CustomPopUp from "../../CustomPopUp/CustomPopUp";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./SectionColorPopUp.css";
+import "./SectionColor.css";
+import SetFireSectionColor from "../../../api/SetFireSectionColor";
+import SetRainbowSectionColor from "../../../api/SetRainbowSectionColor";
 
-const SectionColorPopUp = (props) => {
+const SectionColor = () => {
   return (
-    <CustomPopUp
-      trigger={props.trigger}
-      describe="Choose your favorite section color"
-    >
+    <CustomPopUp describe="Choose your favorite section color">
       <div className="content">
         <div className="title">Select Section Color</div>
         <div className="colorList">
@@ -22,17 +21,23 @@ const SectionColorPopUp = (props) => {
               Color Section
             </Dropdown.Toggle>
 
-            <Dropdown.Menu>
+            <Dropdown.Menu className="Menu">
               <Dropdown.Item
                 className="sectionColor"
                 onClick={() => {
-                  console.log("dw");
+                  SetRainbowSectionColor();
                 }}
               >
                 Rainbow
               </Dropdown.Item>
-
-              <Dropdown.Item className="sectionColor">Fire</Dropdown.Item>
+              <Dropdown.Item
+                className="sectionColor"
+                onClick={() => {
+                  SetFireSectionColor();
+                }}
+              >
+                Fire
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
@@ -40,4 +45,4 @@ const SectionColorPopUp = (props) => {
     </CustomPopUp>
   );
 };
-export default SectionColorPopUp;
+export default SectionColor;

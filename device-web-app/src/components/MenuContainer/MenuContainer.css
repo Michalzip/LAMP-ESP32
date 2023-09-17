@@ -22,7 +22,8 @@ body {
 .container {
   /* border: 5px solid; */
   padding: 10px;
-
+  display: flex;
+  flex-direction: column;
   border-radius: 30px;
   background-color: #ffffff;
 
@@ -31,7 +32,9 @@ body {
 
 .container-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 10%;
 }
 .container-buttons {
@@ -47,16 +50,23 @@ p {
   align-items: center;
   justify-items: center;
 }
-/* @media screen and (max-width: 480px) {
-  .container-buttons {
-    display: block;
-    position: absolute;
+
+.wifi-container {
+  display: flex;
+  align-items: flex-end;
+  background-color: transparent;
+  justify-content: end;
+}
+.wifi-bnt {
+  color: black;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .container-title {
+    margin-top: 10%;
   }
-} */
-/* @media screen and (max-width: 500px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  form Button.learn-more {
+    margin-bottom: 30px;
   }
-} */
+}

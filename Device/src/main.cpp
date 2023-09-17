@@ -1,10 +1,13 @@
-#include "HttpController.h"
+#include "HttpHandlers.h"
+#include "HttpServer.h"
+#include "HttpEndpoints.h"
 #include "Board.h"
 #include <Arduino.h>
 #include <FastLED.h>
 
-HttpController http;
+HttpServer http;
 Board board;
+HttpEndpoints httpEndpoints(http.server, board);
 
 void setup()
 {
@@ -13,9 +16,14 @@ void setup()
   http.startServer();
 
   board.setupLEDs();
+
+  httpEndpoints.setupEndpoints();
 }
 
 void loop()
 {
+
   http.listenRequest();
+  delay(2);
+  httpEndpoints.handleEndpoints();
 }

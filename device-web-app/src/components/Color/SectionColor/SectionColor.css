@@ -60,13 +60,19 @@
 }
 
 .sectionColor {
-  border-bottom: 0.2px solid rgb(0, 0, 0);
-  border-top: 0.2px solid rgb(0, 0, 0);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   text-align: center;
+  background-color: #f9c4d2;
+
+  border: 2px solid #b18597;
+  color: 382b22;
+  border-radius: 0.75em;
 }
 
 .sectionColor:active {
   background-color: red;
+}
+
+.Menu {
+  border: 0px;
 }

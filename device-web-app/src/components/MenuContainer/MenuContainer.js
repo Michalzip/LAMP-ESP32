@@ -1,37 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../Common/Button/Button";
-import CustomColorPopUp from "../Color/CustomColorPopUp/CustomColorPopUp";
-import SectionColorPopUp from "../Color/SectionColorPopUp/SectionColorPopUp";
+import SectionColor from "../Color/SectionColor/SectionColor";
+import { Link } from "react-router-dom";
 import "./MenuContainer.css";
 
 const MenuContainer = () => {
-  const [buttonPopUp, setButtonPopUp] = useState(false);
-  const [buttonPopUp2, setButtonPopUp2] = useState(false);
   return (
     <div className="container">
-      <div className="container-title">
-        <p>Welcome!</p>
-      </div>
-      <div className="container-buttons">
-        <form>
-          <Button
-            text="Custom Color"
-            onClick={() => setButtonPopUp(true)}
-          ></Button>
-          <Button
-            text="Section Color"
-            onClick={() => setButtonPopUp2(true)}
-          ></Button>
-          <CustomColorPopUp
-            trigger={buttonPopUp}
-            setTrigger={setButtonPopUp}
-          ></CustomColorPopUp>
+      <div className="container-title">Welcome!</div>
 
-          <SectionColorPopUp
-            trigger={buttonPopUp2}
-            setTrigger={setButtonPopUp2}
-          ></SectionColorPopUp>
-        </form>
+      <div className="container-buttons">
+        <Link to="/custom-color">
+          <Button text="Custom Color"></Button>
+        </Link>
+
+        <Link to="/section-color">
+          <Button text="Section Color"></Button>
+        </Link>
       </div>
     </div>
   );

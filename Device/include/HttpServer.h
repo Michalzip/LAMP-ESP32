@@ -1,22 +1,17 @@
-#ifndef HttpController_H
-#define HttpController_H
-#include "Board.h"
-#include "BlinkLight.h"
-#include <WebServer.h>
+#pragma once
 
-class HttpController
+#include "Board.h"
+
+#include <WebServer.h>
+#include "HttpEndpoints.h"
+
+class HttpServer
 {
 public:
-    HttpController();
+    HttpServer();
     void startServer();
     void listenRequest();
     void handleSolidLight();
     void handleModeLight();
     WebServer server;
-
-private:
-    Board boardInstance;
-    BlinkLight Light;
 };
-
-#endif
