@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CustomPopUp from "../../CustomPopUp/CustomPopUp";
+import LayoutContainer from "../../Common/LayoutContainer/LayoutContainer";
 import { Wheel } from "@uiw/react-color";
 import HexToRgbConverter from "../../../service/HexToRgbConverter";
 import "./CustomColor.css";
@@ -8,7 +8,7 @@ import SetCustomColor from "../../../api/SetCustomColor";
 const CustomColor = () => {
   const [hex, setHex] = useState("#fff");
   return (
-    <CustomPopUp describe="Choose your favorite colors thanks to the color palette">
+    <LayoutContainer describe="Choose your favorite colors thanks to the color palette">
       <div className="content">
         <div className="title">Select Your Color</div>
 
@@ -26,7 +26,7 @@ const CustomColor = () => {
 
         <div className="color">Color: {hex}</div>
       </div>
-    </CustomPopUp>
+    </LayoutContainer>
   );
 };
 

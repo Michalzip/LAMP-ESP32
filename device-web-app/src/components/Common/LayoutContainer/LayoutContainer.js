@@ -1,9 +1,9 @@
 import React from "react";
-import "./CustomPopUp.css";
+import "./LayoutContainer.css";
 import { VscChromeClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
-const CustomPopUp = (props) => {
+const LayoutContainer = (props) => {
   return (
     <div className="popup">
       <div className="popup-inner">
@@ -21,4 +21,4 @@ const CustomPopUp = (props) => {
   );
 };
 
-export default CustomPopUp;
+export default LayoutContainer;

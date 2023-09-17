@@ -1,5 +1,5 @@
 import React from "react";
-import CustomPopUp from "../../CustomPopUp/CustomPopUp";
+import LayoutContainer from "../../Common/LayoutContainer/LayoutContainer";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SectionColor.css";
@@ -8,7 +8,7 @@ import SetRainbowSectionColor from "../../../api/SetRainbowSectionColor";
 
 const SectionColor = () => {
   return (
-    <CustomPopUp describe="Choose your favorite section color">
+    <LayoutContainer describe="Choose your favorite section color">
       <div className="content">
         <div className="title">Select Section Color</div>
         <div className="colorList">
@@ -42,7 +42,7 @@ const SectionColor = () => {
           </Dropdown>
         </div>
       </div>
-    </CustomPopUp>
+    </LayoutContainer>
   );
 };
 export default SectionColor;
