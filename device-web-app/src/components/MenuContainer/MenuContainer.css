@@ -16,17 +16,28 @@ body {
   justify-content: center;
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background: linear-gradient(233deg, #f9c4d2, #b18597, #ab1096);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite;
 }
-
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .container {
-  /* border: 5px solid; */
   padding: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
   background-color: #ffffff;
-
+  border: 3px solid;
   padding: 30px;
 }
 
@@ -66,7 +77,7 @@ p {
   .container-title {
     margin-top: 10%;
   }
-  form Button.learn-more {
-    margin-bottom: 30px;
-  }
+}
+.link-style {
+  text-decoration: none;
 }

@@ -14,7 +14,6 @@
 
 /* Body */
 
-/* Przycisk */
 button {
   position: relative;
   display: inline-block;
@@ -86,5 +85,8 @@ button.learn-more:active::before {
 @media screen and (max-width: 480px) {
   button {
     display: flex;
+  }
+  button.learn-more {
+    margin-top: 13%;
   }
 }

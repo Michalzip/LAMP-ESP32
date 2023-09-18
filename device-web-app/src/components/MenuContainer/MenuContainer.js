@@ -10,11 +10,11 @@ const MenuContainer = () => {
       <div className="container-title">Welcome!</div>
 
       <div className="container-buttons">
-        <Link to="/custom-color">
+        <Link to="/custom-color" className="link-style">
           <Button text="Custom Color"></Button>
         </Link>
 
-        <Link to="/section-color">
+        <Link to="/section-color" className="link-style">
           <Button text="Section Color"></Button>
         </Link>
       </div>

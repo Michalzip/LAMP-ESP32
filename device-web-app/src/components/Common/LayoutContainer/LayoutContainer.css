@@ -15,8 +15,8 @@
   border-radius: 30px;
   position: relative;
   padding-top: 32px;
-
-  width: 100%;
+  border: 3px solid;
+  width: 90%;
   height: 500px;
   max-width: 640px;
   background-color: rgb(255, 255, 255);
