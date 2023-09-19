@@ -3,7 +3,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const SetFireSectionColor = async () => {
   try {
-    const apiUrl = `http://${process.env.REACT_APP_ESP_IP}/section-color/fire`;
+    const apiUrl = `http://192.168.118.41/section-color/fire`;
     await fetch(apiUrl);
   } catch (error) {
     toast.error("Connection Problem", {
