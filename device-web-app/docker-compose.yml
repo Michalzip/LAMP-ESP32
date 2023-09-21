@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  app:
+    container_name:  device-web-app
+    image: docker-react
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
