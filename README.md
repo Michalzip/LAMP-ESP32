@@ -28,8 +28,8 @@ The microcontroller has soldered LEDs that are controlled by the responsive side
 
 ## Previews
 
-Preview for Project Structure: https://github.com/Michalzip/LAMP-ESP32/tree/main/structure-docs <br/>
-Preview for Frontend Page: https://github.com/Michalzip/LAMP-ESP32/tree/main/device-web-app/public/screens
+Project Structure: https://github.com/Michalzip/LAMP-ESP32/tree/main/structure-docs <br/>
+Project Frontend: https://github.com/Michalzip/LAMP-ESP32/tree/main/device-web-app/public/screens
 
 <br/>
 
