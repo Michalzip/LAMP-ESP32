@@ -7,11 +7,11 @@
 </div>
 
 <p align="center">
-  <img src="https://github.com/Michalzip/LAMP-ESP32/blob/main/device-web-app/public/screens/main-page.png" width="250" height="420" />   
+  <img src="https://github.com/Michalzip/LAMP-ESP32/blob/main/device-web-app/public/screens/main-page.png" width="280" height="420" />   
  
-  <img src="https://github.com/Michalzip/LAMP-ESP32/blob/main/device-web-app/public/screens/custom-color-page.png" width="250" height="420" />
+  <img src="https://github.com/Michalzip/LAMP-ESP32/blob/main/device-web-app/public/screens/custom-color-page.png" width="280" height="420" />
   
-  <img src="https://github.com/Michalzip/LAMP-ESP32/blob/main/device-web-app/public/screens/section-color-page.png" width="250"  />
+  <img src="https://github.com/Michalzip/LAMP-ESP32/blob/main/device-web-app/public/screens/section-color-page.png" width="280" height="420" />
   
   
 </p>
