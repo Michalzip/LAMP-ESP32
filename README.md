@@ -21,7 +21,7 @@ The microcontroller has soldered LEDs that are controlled by the responsive side
 <p>to run the program you will need</p>
 <ul>
 <li>ESP32S</li>
-<li>Leds Ws128b</li>
+<li>Leds Ws2812b</li>
 </ul>
 
 <br/>
