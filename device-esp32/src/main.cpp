@@ -24,6 +24,5 @@ void loop()
 {
 
   http.listenRequest();
-  delay(2);
   httpEndpoints.handleEndpoints();
 }
